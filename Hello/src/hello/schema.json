@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id":"HelloSchematic",
+    "title":"Hello option Schema",
+    "type":"object",
+    "description":"say hello",
+    "properties":{
+        "name":{
+            "type":"string",
+            "description":"the name of the programmer",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "Please answer your service name"
+        },
+        "project":{
+            "type":"string",
+            "description": "Generate in specific Angular CLI"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
