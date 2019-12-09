@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## demo-step 
+
+first you need to run `npm install`
+
+and you can link your npm by `npm link ./Hello`
+
+now you can try a new service schematics by `ng g Hello:getService <ClassName>`
+
+eg. `ng g Hello:getService Api`
+
+it's a simple demo , thank u
